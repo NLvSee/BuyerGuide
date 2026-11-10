@@ -81,51 +81,51 @@ body{background:linear-gradient(135deg,#0e0e64 0%,#5566bb 28%,#c8d4f0 38%,#8833b
 
   <!-- IMAGE PANELS -->
   <div class="panel active img-panel" id="panel-quick-start">
-    <img src="assets/quick-start.png" alt="V6 Plus Quick Start Guide">
+    <img src="quick-start.png" alt="V6 Plus Quick Start Guide">
   </div>
   <div class="panel img-panel" id="panel-nfl-guide">
-    <img src="assets/nfl-guide.jpg" alt="NFL Team Channel Guide">
+    <img src="nfl-guide.jpg" alt="NFL Team Channel Guide">
   </div>
   <div class="panel img-panel" id="panel-apps-info">
-    <img src="assets/apps-info.png" alt="vSeeBox App Guide">
+    <img src="apps-info.png" alt="vSeeBox App Guide">
   </div>
   <div class="panel img-panel" id="panel-remote-guide">
-    <img src="assets/remote-guide.png" alt="Remote Control Guide">
+    <img src="remote-guide.png" alt="Remote Control Guide">
   </div>
   <div class="panel img-panel" id="panel-security-guide">
-    <img src="assets/security-guide.jpg" alt="WiFi Advanced Security Settings">
+    <img src="security-guide.jpg" alt="WiFi Advanced Security Settings">
   </div>
 
   <!-- PDF PANELS -->
   <div class="panel doc-panel" id="panel-setup-pdf">
     <div class="doc-toolbar">
       <h2>vSeeBox V6 Plus – Setup Guide & Tutorial</h2>
-      <a class="dl-btn" href="assets/setup-guide.pdf" download>
+      <a class="dl-btn" href="setup-guide.pdf" download>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Download PDF
       </a>
     </div>
-    <iframe class="pdf-frame" src="assets/setup-guide.pdf" title="Setup Guide PDF"></iframe>
-    <div class="pdf-fallback">Can't display PDF? <a href="assets/setup-guide.pdf" style="color:#a855f7">Open directly</a></div>
+    <iframe class="pdf-frame" src="setup-guide.pdf" title="Setup Guide PDF"></iframe>
+    <div class="pdf-fallback">Can't display PDF? <a href="setup-guide.pdf" style="color:#a855f7">Open directly</a></div>
   </div>
 
   <div class="panel doc-panel" id="panel-tips-pdf">
     <div class="doc-toolbar">
       <h2>vSeeBox Official SoCal – Tips & Tricks</h2>
-      <a class="dl-btn" href="assets/tips-tricks.pdf" download>
+      <a class="dl-btn" href="tips-tricks.pdf" download>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Download PDF
       </a>
     </div>
-    <iframe class="pdf-frame" src="assets/tips-tricks.pdf" title="Tips and Tricks PDF"></iframe>
-    <div class="pdf-fallback">Can't display PDF? <a href="assets/tips-tricks.pdf" style="color:#a855f7">Open directly</a></div>
+    <iframe class="pdf-frame" src="tips-tricks.pdf" title="Tips and Tricks PDF"></iframe>
+    <div class="pdf-fallback">Can't display PDF? <a href="tips-tricks.pdf" style="color:#a855f7">Open directly</a></div>
   </div>
 
   <!-- DOCX PANELS -->
   <div class="panel doc-panel" id="panel-setup-docx">
     <div class="doc-toolbar">
       <h2>vSee-Box v6 Plus – Setup Guide & Tutorial</h2>
-      <a class="dl-btn" href="assets/setup-guide.docx" download>
+      <a class="dl-btn" href="setup-guide.docx" download>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Download Doc
       </a>
@@ -136,7 +136,7 @@ body{background:linear-gradient(135deg,#0e0e64 0%,#5566bb 28%,#c8d4f0 38%,#8833b
   <div class="panel doc-panel" id="panel-audio-docx">
     <div class="doc-toolbar">
       <h2>vSeeBox – Audio Issues</h2>
-      <a class="dl-btn" href="assets/audio-issues.docx" download>
+      <a class="dl-btn" href="audio-issues.docx" download>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Download Doc
       </a>
@@ -160,7 +160,7 @@ function show(name, btn) {
 }
 
 function loadDocx(name) {
-  var map = {'setup-docx': ['assets/setup-guide.docx','docx-setup'], 'audio-docx': ['assets/audio-issues.docx','docx-audio']};
+  var map = {'setup-docx': ['setup-guide.docx','docx-setup'], 'audio-docx': ['audio-issues.docx','docx-audio']};
   if (!map[name]) return;
   var path = map[name][0], elId = map[name][1];
   if (loaded[elId]) return;
