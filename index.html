@@ -56,18 +56,18 @@ body{background:linear-gradient(135deg,#0e0e64 0%,#5566bb 28%,#c8d4f0 38%,#8833b
   </div>
 </div>
 <div class="tab-bar">
-  <button class="tab-btn active" onclick="show('quick-start',this)">⚡ Quick Start</button>
-  <button class="tab-btn" onclick="show('nfl-guide',this)">🏈 NFL Channels</button>
-  <button class="tab-btn" onclick="show('apps-info',this)">📺 App Guide</button>
-  <button class="tab-btn" onclick="show('remote-guide',this)">🎮 Remote Control</button>
-  <button class="tab-btn" onclick="show('security-guide',this)">🔒 WiFi Security</button>
+  <button class="tab-btn active" onclick="show('setup-docx',this)">📝 Setup Guide (DOCX)</button>
   <button class="tab-btn" onclick="show('setup-pdf',this)">📄 Setup Guide (PDF)</button>
-  <button class="tab-btn" onclick="show('tips-pdf',this)">💡 Tips &amp; Tricks (PDF)</button>
-  <button class="tab-btn" onclick="show('setup-docx',this)">📝 Setup Guide (Doc)</button>
+  <button class="tab-btn" onclick="show('quick-start',this)">⚡ Quick Start</button>
+  <button class="tab-btn" onclick="show('remote-guide',this)">🎮 Remote Control</button>
+  <button class="tab-btn" onclick="show('apps-info',this)">📺 App Guide</button>
+  <button class="tab-btn" onclick="show('tips-pdf',this)">💡 Tips &amp; Tricks</button>
+  <button class="tab-btn" onclick="show('nfl-guide',this)">🏈 NFL Channels</button>
+  <button class="tab-btn" onclick="show('security-guide',this)">🔒 WiFi Security</button>
   <button class="tab-btn" onclick="show('audio-docx',this)">🔊 Audio Issues (Doc)</button>
 </div>
 <div class="content">
-  <div class="panel active img-panel" id="panel-quick-start"><img src="quick-start.png?v=20261119" alt="V6 Plus Quick Start Guide"></div>
+  <div class="panel img-panel" id="panel-quick-start"><img src="quick-start.png?v=20261119" alt="V6 Plus Quick Start Guide"></div>
   <div class="panel img-panel" id="panel-nfl-guide"><img src="NFL TEAM CHANNEL GUIDE.jpg" alt="NFL Team Channel Guide"></div>
   <div class="panel img-panel" id="panel-apps-info"><img src="vSee Box v6 Plus main apps info.png" alt="vSeeBox App Guide"></div>
   <div class="panel img-panel" id="panel-remote-guide"><img src="V6 PLUS REMOTE GUIDE.png" alt="Remote Control Guide"></div>
@@ -111,7 +111,7 @@ body{background:linear-gradient(135deg,#0e0e64 0%,#5566bb 28%,#c8d4f0 38%,#8833b
     </div>
   </div>
 
-  <div class="panel doc-panel" id="panel-setup-docx">
+  <div class="panel active doc-panel" id="panel-setup-docx">
     <div class="doc-toolbar">
       <h2>vSee-Box v6 Plus – Setup Guide &amp; Tutorial</h2>
       <a class="dl-btn" href="setup-guide.docx" download>⬇ Download Doc</a>
@@ -200,5 +200,7 @@ function loadDocx(name){
     document.getElementById(elId).innerHTML='<p style="color:#c00">Could not load. Use the Download button above.</p>';
   });
 }
+document.addEventListener("DOMContentLoaded",function(){loadDocx("setup-docx");});
+document.addEventListener("DOMContentLoaded",function(){loadDocx("setup-docx");});
 </script>
 </body></html>
